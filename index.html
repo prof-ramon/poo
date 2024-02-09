@@ -1,0 +1,33 @@
+<script>
+    class Pessoa{
+        altura;
+        peso;
+        nome;
+        genero;
+        
+        constructor(altura, peso, nome, genero){
+            this.altura = altura;
+            this.peso = peso;
+            this.nome = nome;
+            this.genero = genero;
+        }
+
+        falar(){
+            return console.log(this.nome + ' está falando!');
+        }
+
+        comer(){
+            return console.log(this.nome + ' está comendo')
+        }
+    }
+
+    
+    var aluno = new Pessoa(1.64,62,'Isaias','M');
+    console.log(aluno);
+    aluno.falar();
+    aluno.comer();
+    aluno.nome = 'Rayan';
+    console.log(aluno);
+
+
+</script>
